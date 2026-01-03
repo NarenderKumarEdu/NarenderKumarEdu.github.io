@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essay Title | Narender Kumar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        /* UPDATED CSS:
+           1. Increased max-width from 65ch to 55rem (approx 900px).
+           2. Increased font-size to 1.15rem for better legibility on wide lines.
+        */
+        .prose { 
+            max-width: 55rem; 
+            margin: 0 auto; 
+            color: #334155; 
+            line-height: 1.8; 
+            font-size: 1.15rem; 
+        }
+        
+        .prose h1 { font-family: 'Merriweather', serif; font-weight: 700; color: #0f172a; margin-top: 1.5em; margin-bottom: 0.5em; font-size: 2.25rem; line-height: 1.2; }
+        .prose h2 { font-family: 'Merriweather', serif; font-weight: 700; color: #1e293b; margin-top: 2em; margin-bottom: 0.8em; font-size: 1.75rem; }
+        .prose h3 { font-family: 'Merriweather', serif; font-weight: 600; color: #334155; margin-top: 1.5em; margin-bottom: 0.5em; font-size: 1.4rem; }
+        
+        .prose p { margin-bottom: 1.5em; }
+        
+        /* Highlighted Blockquote */
+        .prose blockquote { 
+            border-left: 4px solid #14b8a6; 
+            padding-left: 1.5rem; 
+            font-style: italic; 
+            color: #475569; 
+            background: #f0fdfa; /* Very light teal background */
+            padding: 1.5rem;
+            border-radius: 0 8px 8px 0;
+            margin: 2.5rem 0; 
+        }
+        
+        .prose ul { list-style-type: disc; padding-left: 2rem; margin-bottom: 1.5em; }
+        .prose strong { color: #0f172a; font-weight: 600; }
+        
+        /* Image styling if you add any */
+        .prose img { width: 100%; border-radius: 8px; margin: 2rem 0; }
+    </style>
+</head>
+<body class="bg-white text-slate-800">
+
+    <header id="main-header"></header>
+
+    <div class="container mx-auto px-6 py-12">
+        
+        <div class="max-w-4xl mx-auto mb-8">
+            <a href="../../essays.html" class="inline-flex items-center text-slate-500 hover:text-teal-600 transition-colors text-sm font-medium">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                Back to Essays
+            </a>
+        </div>
+
+        <article class="prose">
+            
+            <div class="border-b border-slate-100 pb-8 mb-8">
+                <div class="flex items-center gap-4 text-sm mb-4">
+                    <span class="px-3 py-1 bg-teal-50 text-teal-800 rounded-full font-bold text-xs uppercase tracking-wide">Philosophy of Ed</span>
+                    <span class="text-slate-400">December 10, 2024</span>
+                </div>
+                <h1 style="margin-top: 0;">Why "Standardized" Testing Fails the Average Student</h1>
+            </div>
+            
+            <p class="lead text-xl text-slate-600 font-light mb-8">
+                We treat students like factory components, expecting uniform output from diverse inputs. Here is why the bell curve is a trap for educators.
+            </p>
+
+            <p>
+                In the typical classroom, we are often forced to teach to the middle. The curriculum is designed for the "average" student—a statistical ghost that doesn't actually exist. When we standardize testing, we are not measuring ability; often, we are measuring compliance and memory.
+            </p>
+            
+            <h2>The Bell Curve Trap</h2>
+            <p>
+                Teachers are often evaluated on how well their class performs against a standard curve. But human intelligence is jagged, not smooth. A student might be in the 90th percentile for logic but the 40th for verbal expression. Standardized tests flatten these jagged edges.
+            </p>
+
+            <blockquote>
+                "If you judge a fish by its ability to climb a tree, it will live its whole life believing that it is stupid."
+            </blockquote>
+
+            <p>
+                This leads us to the core problem of modern pedagogy in state schools. We are optimizing for ease of grading rather than depth of understanding.
+            </p>
+            
+            <h3>What is the alternative?</h3>
+            <p>
+                Competency-based learning offers a solution. Instead of moving students forward based on age (Time-based), we move them forward based on mastery (Skill-based).
+            </p>
+
+            </article>
+
+        <div class="max-w-4xl mx-auto mt-16 pt-8 border-t border-slate-200">
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center text-xl font-bold text-slate-500">
+                    N
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 text-sm">Written by Narender Kumar</p>
+                    <p class="text-slate-500 text-xs">Education Researcher & Computer Science Teacher</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../../js/scripts.js"></script>
+</body>
+</html>

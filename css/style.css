@@ -1,0 +1,151 @@
+/* css/style.css */
+
+/* IMPORT GOOGLE FONT: Merriweather for that modern academic Serif look */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+:root {
+    /* DARK THEME PALETTE */
+    --bg-color: #0f172a;        /* Very Dark Slate Blue */
+    --card-bg: #1e293b;         /* Lighter Slate for cards */
+    --text-main: #f1f5f9;       /* Off-white for readability */
+    --text-muted: #94a3b8;      /* Light grey for secondary text */
+    --accent: #f97316;          /* Vibrant Orange */
+    --accent-hover: #ea580c;    /* Darker Orange for hover */
+    
+    --font-main: 'Merriweather', serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.7;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* NAVIGATION */
+nav {
+    background: var(--card-bg);
+    padding: 1.5rem 0;
+    border-bottom: 2px solid var(--accent);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+/* TYPOGRAPHY */
+h1, h2, h3 {
+    color: var(--text-main);
+    margin-top: 0;
+}
+
+h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+h2 { border-bottom: 1px solid var(--accent); display: inline-block; padding-bottom: 5px; margin-top: 40px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* CARDS */
+.card {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    border-left: 5px solid var(--accent);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+}
+
+.meta-info {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    background-color: var(--accent);
+    color: white !important; /* Force white text */
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--accent-hover);
+    text-decoration: none;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid var(--text-muted);
+    color: var(--text-muted) !important;
+}
+
+.btn-secondary:hover {
+    border-color: var(--accent);
+    color: var(--accent) !important;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px 0;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    border-top: 1px solid #334155;
+    margin-top: 50px;
+}
+
+/* PAPER READING MODE (For template) */
+.paper-content {
+    background: #e2e8f0; /* Light grey paper color for reading */
+    color: #1e293b;      /* Dark text for reading */
+    padding: 40px;
+    border-radius: 4px;
+}
+.paper-content h1, .paper-content h2 { color: #0f172a; }
