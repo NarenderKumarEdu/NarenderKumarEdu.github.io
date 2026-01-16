@@ -27,6 +27,19 @@ document.addEventListener("DOMContentLoaded", function() {
     };
 
     // --------------------------------------------------------------------------
+    // FAVICON INJECTION
+    // --------------------------------------------------------------------------
+    const faviconHTML = `
+        <link rel="apple-touch-icon" sizes="180x180" href="${rootPath}assets/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="${rootPath}assets/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="${rootPath}assets/favicons/favicon-16x16.png">
+        <link rel="manifest" href="${rootPath}assets/favicons/site.webmanifest">
+        <link rel="shortcut icon" href="${rootPath}assets/favicons/favicon.ico">
+    `;
+    // Insert into the <head> of the document
+    document.head.insertAdjacentHTML('beforeend', faviconHTML);
+
+    // --------------------------------------------------------------------------
     // 2. HEADER INJECTION
     // --------------------------------------------------------------------------
     const navHTML = `
